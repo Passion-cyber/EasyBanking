@@ -1,0 +1,128 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+html,
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  background-color: hsl(220, 16%, 96%);
+  /* overflow: hidden; */
+}
+
+@media (max-width: 1440px) {
+  /* Syle for global container */
+  section .container {
+    width: 1200px;
+    margin: 20px auto;
+    padding: 2rem 1.5rem;
+  }
+
+  /* WHY CHOOSE EASYBANK SECTION STARTS HERE */
+  section .container .my-hero-section h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: hsl(233, 8%, 62%);
+  }
+
+  section .container .my-hero-section p {
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);
+  }
+
+  section .container .my-hero-section .p-text {
+    display: block;
+  }
+
+  section .container .my-hero-section .p-text-1 {
+    margin-bottom: 3px;
+    line-height: 1.6em;
+  }
+  /* WHY CHOOSE EASYBANK SECTION ENDS HERE */
+  
+  /* GRID SECTION STARTS HERE */
+   section .banking-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    margin: 30px auto;
+  }
+
+  section .banking-items .banking-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+
+  section .banking-items .banking-item img {
+    height: 65px;
+    width: 65px;
+    padding: 1rem 0;
+  }
+
+  section .banking-items .banking-item h2 {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: hsl(233, 8%, 62%);
+  }
+
+  section .banking-items .banking-item .p-box {
+    line-height: 1.6em;
+    text-align: left;
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);
+  }
+  /* GRID SECTION ENDS HERE */
+}
+
+@media (max-width: 500px) {
+  /* Syle for global container */
+  section .container {
+    width: 375px;
+  }
+
+  section .banking-items {
+    grid-template-columns: 1fr;
+    
+  }
+
+  section .banking-items .banking-item {
+    text-align: center;
+    padding: 1rem auto;
+  }
+
+  section .container .my-hero-section h2{
+    font-size: 30px;
+    text-align: center;
+    color: hsl(233, 26%, 24%);
+  }
+  
+  section .container .my-hero-section .p-text{
+    text-align: center;
+  }
+
+  section .container .banking-item h2{
+    color: hsl(233, 26%, 24%);
+    text-align: center;
+  }
+
+  section .container .my-hero-section .easy-flex {
+    display: block;
+  }
+
+  section .container .my-hero-section .p-text-1{
+    text-align: center;
+    margin-bottom: 3px;
+  }
+
+  section .banking-items{
+    grid-gap: .5rem;
+  }
+
+  section .container .banking-item .p-box{
+    text-align: center;
+    align-items: center;
+    line-height: 1.6em;
+    color: hsl(233, 8%, 62%);
+  }
+}
